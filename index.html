@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>E-Commerce</title>
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="box">
+          <form id="searchBox">
+            <input placeholder="Search Products & Brands.." type="text" />
+            <input id="submitBtn" type="submit" value="Search" />
+          </form>
+          <nav id="navArea">
+            <ul class="navArea">
+              <li class="circle1"></li>
+              <span class="navleft">
+                <li>
+                  <a href="#"
+                    >HOME<i class="fa-solid fa-house fafaitem-space"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >CART<i
+                      class="fa-sharp fa-solid fa-basket-shopping fafaitem-space"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >WISHLIST<i class="fa-solid fa-heart fafaitem-space"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >SignUp / Login<i
+                      class="fa-solid fa-user fafaitem-space"
+                    ></i
+                  ></a>
+                </li>
+              </span>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </nav>
+    <!-- ---------------Sliding Images Section ----------------------------------- -->
+    <section class="Section-1">
+        <div class="carousel-container">
+            <div class="images fade">
+                <div class="top-left"><h1>This <br> season's <br> latest</h1></div>
+               <img src="Images/slidedesk.jpg">
+               </div>
+               <div class="images fade">
+                  <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg">
+               </div>
+               <div class="images fade">
+                  <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg">
+               </div>
+               
+               <!-- Previous and Next Buttons -->
+               <a class="previous" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
+               <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right fa-2x"></i></a>
+         </div>
+         <br>
+         
+         <!-- Navigation Dots-->
+         <div style="text-align:center" class="dots-slider">
+            <span class="navigation-dot" onclick="currentSlide(1)"></span>
+            <span class="navigation-dot" onclick="currentSlide(2)"></span>
+            <span class="navigation-dot" onclick="currentSlide(3)"></span>
+         </div>
+            
+    </section>
+    <!-- -------------- Sliding images Section End ------------------------------- -->
+    <script src="/JS/index.js"></script>
+  </body>
+</html>
