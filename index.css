@@ -326,3 +326,121 @@ input[type="checkbox"]:checked + label:after {
 
 /* ============ heart Shape end ============ */
 /* ======================== Sliding Cards End ===================================== */
+
+/* ======================== Shop By Categories ================================= */
+.section-3{
+	padding-inline: 12rem;
+	margin-top: 6rem;
+}
+.sectin3-heading h1{
+	font-size: 5rem;
+	font-weight: 700;
+}
+.catehories-maindiv{
+	margin-top: 4rem;
+	display: grid;
+  grid-template-columns: auto auto;
+  gap: 60px; 
+  padding: 10px;
+}
+.img1-div{
+	position: relative;
+	width: fit-content;
+
+}
+.img1-div img{
+	width: 100%;
+}
+.shop-category-button{
+	position: absolute;
+    top: 89%;
+    text-align: start;
+    right: 0px;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 3px 12px;
+}
+.check-browscategory-button{
+	border: 2px solid black;
+    padding: 12px 32px;
+    font-size: 4rem;
+    font-weight: 600;
+    background-color: transparent;
+}
+.browsallcategory{
+	margin-top: 8rem;
+	text-align: center;
+}
+/* ================== Shop By Category END ============================== */
+
+
+/* ====================== Section 4 Card Sliding ================================= */
+.carousel-control-prev-icon{
+	background-image: url(/Images/leftvector.png);
+}
+.carousel-control-next-icon{
+	background-image: url(/Images/rightvector.png);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+     display: inline-block;
+	 width: 3rem;
+	 height: 5rem;
+	 background-repeat: no-repeat;
+	 color: black;
+	 background-position: 50%;
+	 background-size: 100% 100%;
+}
+
+/* ==================== Footer Section ===================================== */
+.fa {
+	padding: 12px;
+    font-size: 24px;
+    width: 50px;
+    height: 52px;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 8px;
+  }
+  
+  .fa:hover {
+	  opacity: 0.7;
+  }
+.social-media-icon .fa-facebook {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-instagram {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-twitter {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-linkedin {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .links-About{
+	display: flex;
+	flex-direction: column;
+  }
+  .footer-main-div{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 10px;
+	background-color: #11575C;
+	padding: 10px;
+  }
+.social-media-icon h2{
+	color: #D9D9D9;
+	font-size: 3rem;
+	font-weight: 900;
+}
