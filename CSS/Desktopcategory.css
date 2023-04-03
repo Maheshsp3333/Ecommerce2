@@ -469,7 +469,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 /* ==================== Footer Section ===================================== */
-.fa {
+.social-media-icon .fa {
 	padding: 12px;
     font-size: 24px;
     width: 50px;
