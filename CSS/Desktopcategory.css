@@ -221,11 +221,12 @@ ul.sub-menu > li > a:hover {
     width: 22px;
   }
 }
-
-/* ============================ Navbar Section End ============================================== */
 .fafaitem-space {
   margin-left: 4px;
 }
+
+/* ============================ Navbar Section End ============================================== */
+
 /* ================ Sliding Section Added ================================ */
 .container_2 {
   position: relative;
