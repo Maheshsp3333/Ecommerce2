@@ -387,24 +387,23 @@ body {
 
   /* ===================== My Account Section ============================= */
 
-  .divide-three{
-    display: flex;
-    flex-direction: row;
-
-  }
   .subsection-1{
     flex: 1;
+    color: #565656;
+    border-right: 1px solid #C4C4C4;
 
   }
   .subsection-2{
     flex: 1;
     color: #565656;
+    border-right: 1px solid #C4C4C4;
     
 
   }
   .subsection-3{
     flex: 1;
-
+    color: #565656;
+   
   }
   .icon-text{
     display: flex;
@@ -465,3 +464,125 @@ body {
     width: 10%;
     height: 24%;
   }
+  
+  .icon-text4{
+    display: flex;
+  }
+  .icon-text4 img{
+    width: 10%;
+    height: 24%;
+  }
+
+  .icon-text4 h2{
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-left: 24px;
+    margin-top: 4px;
+  }
+  .subsection-3 h3{
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+  .subsection-3 ul li{
+    list-style: none;
+    line-height: 36px;
+  }
+  .divide-three{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    gap: 4rem;
+  }
+  .maindivh2{
+    text-align: center;
+    color: #EA4335;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 3rem;
+  }
+  .main-div{
+    border: 1px solid #F1F1F1;
+    padding: 10px;
+    border-radius: 32px;
+    margin-block: 4rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #F1F1F1;
+  }
+  .my-account-section{
+    padding-inline: 10rem;
+  }
+
+  /* ==================== Footer Section ===================================== */
+.social-media-icon .fa {
+	padding: 12px;
+    font-size: 24px;
+    width: 50px;
+    height: 52px;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 8px;
+  }
+  
+  .fa:hover {
+	  opacity: 0.7;
+  }
+.social-media-icon .fa-facebook {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-instagram {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-twitter {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-linkedin {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .links-About{
+	display: flex;
+	flex-direction: column;
+  }
+  .footer-main-div{
+	display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 153px;
+    background-color: #11575C;
+    margin-inline: 0px;
+    padding: 60px 60px;
+    margin-top: 6rem;
+  }
+.social-media-icon h2{
+	color: #D9D9D9;
+	font-size: 3rem;
+	font-weight: 900;
+}
+.social-media-icon p{
+	color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.company h2{
+	font-size: 28px;
+    font-weight: 600;
+    color: #D9D9D9;
+    line-height: 40px;
+}
+.links-About a{
+	color: white;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 56px;
+    font-weight: 300;
+}
+
+/* ========================== Footer Section End ========================== */
