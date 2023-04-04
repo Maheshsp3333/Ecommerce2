@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/CSS/add_to_cart.css">
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/add_to_cart.css">
 
     <title>Cart</title>
 </head>
+
 <body>
     <nav>
         <div class="wrapper">
@@ -35,7 +37,7 @@
                                 <a href="#">WISHLIST<i class="fa-solid fa-heart fafaitem-space"></i></a>
                             </li>
                             <li>
-                                <a href="#">SignUp / Login<i class="fa-solid fa-user fafaitem-space"></i></a>
+                                <a href="#">USERNAME<i class="fa-solid fa-user fafaitem-space"></i></a>
                             </li>
                         </span>
                     </ul>
@@ -48,9 +50,11 @@
     <section class="section-1">
         <div class="main-div">
             <div class="add-cart-div">
-              <div class="Adresses-save"><h2>From Saved Adresses</h2>
-                 <input type="text" placeholder="Enter Delivery Pincode"></div>
-                 <div class="catehories-maindiv">
+                <div class="Adresses-save">
+                    <h2>From Saved Adresses</h2>
+                    <input type="text" placeholder="Enter Delivery Pincode">
+                </div>
+                <div class="catehories-maindiv">
                     <div class="img1-div">
                         <div class="heart-shape">
                             <input id="heart3" type="checkbox" />
@@ -59,12 +63,40 @@
                         </div>
                         <img src="/Images/cart_images/cartimage.jpg" alt="">
                         <div class="shoes-details">
-                            <p> PUMA PURE XT FRESH TRAINING & <br> GYM SHOES FOR MEN <br> 
-                                <h5 style="color: #6C6C6C;font-size: 16px;">Size: 8, Grey</h5>
-                                <span style="display: inline-flex;color: #6C6C6C;"><strike>&#x20B9;649.00</strike>&nbsp;&nbsp;&nbsp;&nbsp;<h4 style="color: #11575C;font-size: 22px;">&#x20B9;3,289</h4></span>
-                                <p style="font-size: 20px; color: #34A853;">53% OFF <br> 3 OFFERS APPLIED</p>
+                            <p> PUMA PURE XT FRESH TRAINING & <br> GYM SHOES FOR MEN <br>
+                            <h5 style="color: #6C6C6C;font-size: 16px;">Size: 8, Grey</h5>
+                            <span
+                                style="display: inline-flex;color: #6C6C6C;"><strike>&#x20B9;649.00</strike>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <h4 style="color: #11575C;font-size: 22px;">&#x20B9;3,289</h4></span>
+                            <p style="font-size: 20px; color: #34A853;">53% OFF <br> 3 OFFERS APPLIED</p>
                             </p>
-                           <span style="display: inline-flex; gap: 5rem; margin-top: 3rem;"><h3>SAVE FOR LATER</h3><h3>REMOVE</h3></span>
+                            <span style="display: inline-flex; gap: 5rem; margin-top: 3rem;">
+                                <h3>SAVE FOR LATER</h3>
+                                <h3>REMOVE</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catehories-maindiv">
+                    <div class="img1-div">
+                        <div class="heart-shape">
+                            <input id="heart3" type="checkbox" />
+                            <!-- <label for="heart">❤</label> -->
+                            <label for="heart3"></label>
+                        </div>
+                        <img src="/Images/cart_images/cartimage.jpg" alt="">
+                        <div class="shoes-details">
+                            <p> PUMA PURE XT FRESH TRAINING & <br> GYM SHOES FOR MEN <br>
+                            <h5 style="color: #6C6C6C;font-size: 16px;">Size: 8, Grey</h5>
+                            <span
+                                style="display: inline-flex;color: #6C6C6C;"><strike>&#x20B9;649.00</strike>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <h4 style="color: #11575C;font-size: 22px;">&#x20B9;3,289</h4></span>
+                            <p style="font-size: 20px; color: #34A853;">53% OFF <br> 3 OFFERS APPLIED</p>
+                            </p>
+                            <span style="display: inline-flex; gap: 5rem; margin-top: 3rem;">
+                                <h3>SAVE FOR LATER</h3>
+                                <h3>REMOVE</h3>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -72,34 +104,89 @@
                     <button class="place-order-btn">PLACE ORDER</button>
                 </div>
             </div>
-            
-            <div class="price-details-div">
-                <h2>PRICE DETAILS</h2>
-                <table>
-                    <tr>
-                      <th>Price (1st item)</th>
-                      <th>&#8377;6,999</th>
-                    </tr>
-                    <tr>
-                        <th>Price (2nd item)</th>
-                        <th>&#8377;6,999</th>
-                      </tr>
-                      <tr>
-                        <th>Discount</th>
-                        <th>&#8377;-7,420</th>
-                      </tr>
-                      <tr>
-                        <th>Delivery Charges</th>
-                        <th>&#8377;6,999</th>
-                      </tr>
-                      <tr>
-                        <th>Total Amount</th>
-                        <th>&#8377;6,578</th>
-                      </tr>
-                </table>
-                <p>You will save &#8377;7,420 on <br> this order </p>
+
+            <div class="price-details-div1">
+                <div class="price-details-div">
+                    <h2>PRICE DETAILS</h2>
+                    <table>
+                        <tr>
+                            <th>Price (1st item)</th>
+                            <th>&#8377;6,999</th>
+                        </tr>
+                        <tr>
+                            <th>Price (2nd item)</th>
+                            <th>&#8377;6,999</th>
+                        </tr>
+                        <tr>
+                            <th>Discount</th>
+                            <th style="color: #34A853;">&#8377;-7,420</th>
+                        </tr>
+                        <tr>
+                            <th>Delivery Charges</th>
+                            <th style="color:#34A853 ;">Free</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 700;">Total Amount</th>
+                            <th style="font-weight: 700;">&#8377;6,578</th>
+                        </tr>
+                    </table>
+                    <p style="line-height: 32px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #34A853;">You will save &#8377;7,420 on <br> this order </p>
+                </div>
+                <div class="secure-payment"><img src="/Images/cart_images/Safeandsecurepayment.png" alt=""><p>Safe and Secure Payments. <br> Easy returns. <br>
+                    100% Authentic products.</p></div>
             </div>
         </div>
     </section>
+    <!-- =============== Footer Section Start ========================================= -->
+       <!-- ======================= Footer Section Start =========================================== -->
+    <section class="footer-section">
+        <footer>
+            <div class="footer-main-div">
+                <div class="social-media-icon">
+                    <h2>FASHION</h2>
+                    <p>Complete your style with awesome <br> shoes from us.</p>
+                    <span>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </span>
+                </div>
+
+                <div class="company">
+                    <h2>Company</h2>
+                    <div class="links-About">
+                        <a href="">About</a>
+                        <a href="">Contact us</a>
+                        <a href="">Support</a>
+                        <a href="">Careers</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Quick Link</h2>
+                    <div class="links-About">
+                        <a href="">Share Location</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Legal</h2>
+                    <div class="links-About">
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- ======================= Footer Section End =========================================== -->
+    
 </body>
+
 </html>
