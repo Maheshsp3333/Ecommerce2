@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/payment.css">
+    <title>Payment</title>
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="box">
+                <form id="searchBox">
+                    <input placeholder="Search Products & Brands.." type="text" />
+                    <input id="submitBtn" class="mainLoginInput" type="submit" value="SEARCH" />
+                </form>
+                <nav id="navArea">
+                    <ul class="navArea">
+                        <li class="circle1"></li>
+                        <span class="navleft">
+                            <li>
+                                <a href="#">HOME<i class="fa-solid fa-house fafaitem-space"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">CART<i class="fa-sharp fa-solid fa-basket-shopping fafaitem-space"></i>
+                                    <span class="digit-count">4</span></a>
+                            </li>
+                            <li>
+                                <a href="#">WISHLIST<i class="fa-solid fa-heart fafaitem-space"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">USERNAME<i class="fa-solid fa-user fafaitem-space"></i></a>
+                            </li>
+                        </span>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <!-- ======================== Navbar END========================================= -->
+    <!-- ================= Payment Section Start ============================== -->
+    <section class="payment-section">
+        <form action="" method="get" class="payment-form">
+            <div class="payment-maindiv">
+                <h1 style="font-weight: 700;color: #EA4335; font-size: 30px;">SELECT YOUR PAYMENT METHOD</h1>
+                <h3 style="font-size: 26px;
+            font-weight: 500;">Your Available Balance</h3>
+
+
+                <div style="display: flex; padding-left: 8rem;"> <input type="text"
+                        placeholder="Enter Voucher Code"><button class="apply-btn">Apply</button></div>
+                <h2 style="font-size: 26px;
+                font-weight: 500;">Another Payment method</h2>
+                <input type="radio" id="payment" name="fav_language" value="HTML">
+                  <label for="payment">Pay with Debit/Credit/ATM Cards</label><br>
+                <p style="color: #9A9797;
+                font-size: 28px;
+                padding-left: 5rem;
+                line-height: normal;
+                font-weight: 600;">You can save your cards as per new RBI
+                    guidelines. <a href="" style="text-decoration: none; color: #4A90E2;"> Learn More </a></p>
+                <div class="bank-imgages">
+                    <img src="/Images/payment/visa.jpg" alt="">
+                    <img src="/Images/payment/rupay.jpg" alt="">
+                    <img src="/Images/payment/mastercard.jpg" alt="">
+                    <img src="/Images/payment/maestro.jpg" alt="">
+                    <img src="/Images/payment/Sbi.jpg" alt="">
+                    <img src="/Images/payment/punjabnational.jpg" alt="">
+                </div>
+                <input type="radio" id="netbanking" name="fav_language" value="HTML">
+                  <label for="netbanking">Net Banking</label><br>
+                <select id="netbanking" class="netbanking" name="netbanking">
+                    <option value="">Choose An Option <i class="arrow down"></i></option>
+                    <option value="sbi"><a href="">State bank of india</a></option>
+                    <option value="pnb"><a href="">Punjab national bank</a></option>
+                    <option value="bod"><a href="">Bank of Baroda</a></option>
+                    <option value="cbi"><a href="">Central Bank Of India</a></option>
+                    <option value="hdfc"><a href="">HDFC</a></option>
+                </select> <br>
+                <input type="radio" id="otherupi" name="fav_language" value="HTML">
+                  <label for="otherupi">Other UPI Apps</label><br>
+                <input type="radio" id="Emi" name="fav_language" value="HTML">
+                  <label for="Emi">EMI</label><br>
+                <div class="cash-delivery"><input type="radio" id="cashon" name="fav_language" value="HTML">
+                      <label for="cashon">Cash On Delivery/Pay On Delivery</label><br>
+                    <p style="color: #9A9797; font-size: 24px; font-weight: 600;padding-left: 4rem;">Scan & Pay using
+                        app. Cash, UPI, Cards
+                        also accepted. <a href="" style="text-decoration: none; color: #4A90E2;"> Know more.</a></p>
+                </div>
+            </div>
+            <div class="place-order-div">
+                <button class="place-order-btn">Use this payment method</button>
+            </div>
+        </form>
+
+    </section>
+
+
+    <!-- ======================= Footer Section Start =========================================== -->
+    <section class="footer-section">
+        <footer>
+            <div class="footer-main-div">
+                <div class="social-media-icon">
+                    <h2>FASHION</h2>
+                    <p>Complete your style with awesome <br> shoes from us.</p>
+                    <span>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </span>
+                </div>
+
+                <div class="company">
+                    <h2>Company</h2>
+                    <div class="links-About">
+                        <a href="">About</a>
+                        <a href="">Contact us</a>
+                        <a href="">Support</a>
+                        <a href="">Careers</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Quick Link</h2>
+                    <div class="links-About">
+                        <a href="">Share Location</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Legal</h2>
+                    <div class="links-About">
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- ======================= Footer Section End =========================================== -->
+</body>
+
+</html>
