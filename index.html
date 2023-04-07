@@ -8,15 +8,61 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="index-responsive.css">
   <title>E-Commerce HOME</title>
 </head>
 
 <body>
+
+  <!-- ===============================Mobile View ========================== -->
+    <!-- ------------------------ Navbar For Mobile ------------------------- -->
+    
+      <div class="mobile-navbar">
+        <i class="fa-sharp fa-solid fa-bars" id="cart-icon"></i>
+        <h2>Shoes</h2>
+        <img src="/Images/manimage.png" alt="">
+      </div>
+
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+
+      <div class="cart-content">
+        <!-- <div class="cart-box">
+         <img src="/Images/product002.png" alt="" class="cart-img">
+         <div class="detail-box">
+           <div class="cart-product-title">Earbuds</div>
+           <div class="cart-price">$25.099</div>
+           <input type="number" value="1" class="cart-quantity">
+         </div>
+         
+         <i class="fa fa-trash cart-remove" aria-hidden="true"></i>
+       </div>  -->
+      </div>
+      <!-- total -->
+      <div class="total">
+       <div class="total-title">Total</div>
+       <div class="total-price">$0</div>
+      </div>
+       <!-- Buy Button -->
+       <button type="button" class="btn-buy">Buy Now</button>
+       <!-- cart close -->
+       <i class="fa fa-times" id="close-cart" aria-hidden="true"></i>
+     </div>
+    
+    
+  <!-- ================================ Mobile END ========================== -->
   <nav>
     <div class="wrapper">
       <div class="box">
@@ -65,15 +111,15 @@
             <div class="img-heading">
               <h1>This <br> season's <br> latest</h1>
             </div>
-            <img src="/Images/slidedesk.jpg" alt="Los Angeles" style="width:100%; height: 60rem;">
+            <img src="/Images/slidedesk.jpg" alt="Los Angeles" >
           </div>
 
           <div class="item">
-            <img src="/Images/slidedesk.jpg" alt="Chicago" style="width:100%; height: 60rem;">
+            <img src="/Images/slidedesk.jpg" alt="Chicago" >
           </div>
 
           <div class="item">
-            <img src="/Images/slidedesk.jpg" alt="New york" style="width:100%; height: 60rem;">
+            <img src="/Images/slidedesk.jpg" alt="New york" >
           </div>
         </div>
 
@@ -219,6 +265,69 @@
       </div>
       <div class="checkalllatest"><button class="check-all-button">CHECK ALL LATEST</button></div>
   </section>
+  <!-- ==================== Mobile Section Card Slider ============================== -->
+    <section class="mobile-section-card">
+      <div class="main-div">
+        <div class="cards-items-wish">
+          <div class="card  padding-inner" >
+            <div class="heart-shape">
+              <input id="heart33" type="checkbox" />
+              <!-- <label for="heart">❤</label> -->
+              <label for="heart33"></label>
+            </div>
+            <img src="Images/image 1 (1).jpg" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Artsy</h1>
+              <button class="card-button-1">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards-items-wish">
+          <div class="card  padding-inner">
+            <div class="heart-shape">
+              <input id="heart34" type="checkbox" />
+              <!-- <label for="heart">❤</label> -->
+              <label for="heart34"></label>
+            </div>
+            <img src="Images/image 1 (1).jpg" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Artsy</h1>
+              <button class="card-button-1">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards-items-wish">
+          <div class="card  padding-inner">
+            <div class="heart-shape">
+              <input id="heart35" type="checkbox" />
+              <!-- <label for="heart">❤</label> -->
+              <label for="heart35"></label>
+            </div>
+            <img src="Images/image 1 (1).jpg" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Artsy</h1>
+              <button class="card-button-1">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards-items-wish">
+          <div class="card  padding-inner">
+            <div class="heart-shape">
+              <input id="heart36" type="checkbox" />
+              <!-- <label for="heart">❤</label> -->
+              <label for="heart36"></label>
+            </div>
+            <img src="Images/image 1 (1).jpg" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Artsy</h1>
+              <button class="card-button-1">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="checkalllatest"><button class="check-all-button">CHECK ALL LATEST</button></div>
+    </section>
+    <!-- ============== Mobile Section Card Slider end ================ -->
   <!-- ========================== Sliding Card Section End =================================== -->
 
   <!--============================ Shop By Categories Section================================== -->
