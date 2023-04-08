@@ -4,7 +4,7 @@
     position: relative;
     margin-top: 2rem;
   }
-  .fa-magnifying-glass {
+  .mag-glass {
     position: absolute;
     top: 9px;
     right: 12.5rem;
@@ -26,7 +26,7 @@
   /*======================= Home section div Position Fixed ====================== */
 
   .icons {
-    gap: 6rem;
+    gap: 3rem;
     position: fixed;
     bottom: 1%;
     display: flex;
