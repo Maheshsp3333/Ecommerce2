@@ -536,8 +536,10 @@ input[type="checkbox"]:checked + label:after {
 .mobile-navbar{
   display: none;
 }
-/* .cart{
+ .cart{
   display: none;
-} */
-
+ }
+ .fixed-div-section{
+  display: none;
+ }
 /* ==================== Footer Section End ====================================== */
