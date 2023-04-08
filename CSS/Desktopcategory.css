@@ -540,5 +540,24 @@ input[type="checkbox"]:checked + label:after {
     line-height: 44px;
     font-weight: 300;
 }
+.carousel-inner>.item>img{
+  width: 100%;
+  height: 70rem;
+}
+.main-div{
+  display: none;
+}
+.mobile-navbar{
+  display: none;
+}
+ .cart{
+  display: none;
+ }
+ .fixed-div-section{
+  display: none;
+ }
+ .mob-sect-maindiv{
+  display: none;
+ }
 
 /* ========================== Footer Section End ========================== */

@@ -230,6 +230,9 @@ body {
   /* ============================ Navbar Section End ============================================== */
 
   /* ======================== Shop By Categories ================================= */
+  .section-33{
+    display: none;
+  }
 .section-3 {
     padding-inline: 12rem;
     margin-top: 6rem;
@@ -341,7 +344,6 @@ body {
     cursor: pointer;
     color: white;
     font-weight: 700;
-    margin-right: 16rem;
     border-radius: 8px;
     font-size: 20px;
     background-color: #60B72A;
@@ -354,7 +356,6 @@ body {
     color: white;
     font-weight: 700;
     margin-top: 1rem;
-    margin-right: 16rem;
     border-radius: 8px;
     font-size: 20px;
     background-color: #2FA7C0;
@@ -380,6 +381,17 @@ body {
   }
   .enline-div{
     margin-top: 4rem;
+  }
+  .enline-div1{
+    float: left;
+    margin-top: 12px;
+    margin-right: 10px;
+    width: 44%;
+  }
+  .enline-div2{
+    float: right;
+    margin-top: 12px;
+    width: 46%;
   }
 
   

@@ -1,7 +1,31 @@
 @media (min-width: 340px) and (max-width: 480px) {
-    /*======================= Home section div Position Fixed ====================== */
-  
-  .icons{
+  /* =========== Wishlist searchbar ======================== */
+  .wishlist-searchbar {
+    position: relative;
+    margin-top: 2rem;
+  }
+  .fa-magnifying-glass {
+    position: absolute;
+    top: 9px;
+    right: 12.5rem;
+    color: #9a9797;
+  }
+  .wishlist-searchbar input {
+    border: none;
+    width: 60%;
+    margin-right: 24px;
+    float: right;
+    padding: 10px;
+    background-color: white;
+    border-radius: 24px;
+  }
+  .wishlist-searchbar input::placeholder {
+    padding-left: 2rem;
+  }
+
+  /*======================= Home section div Position Fixed ====================== */
+
+  .icons {
     gap: 6rem;
     position: fixed;
     bottom: 1%;
@@ -12,15 +36,15 @@
     border-radius: 34px;
     padding-inline: 2rem;
   }
-  .fixed-div-section{
+  .fixed-div-section {
     display: block;
-   }
-  .icons a{
-   font-size: 2em;
-   color: black;
-   position: relative;
   }
-  .digit-count1{
+  .icons a {
+    font-size: 2em;
+    color: black;
+    position: relative;
+  }
+  .digit-count1 {
     font-size: 11px;
     font-weight: 600;
     position: absolute;
@@ -37,9 +61,10 @@
     font-size: 34px;
   }
   .mobile-navbar {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
-    padding-inline: 4rem;
+    padding-inline: 2rem;
   }
   .mobile-navbar h2 {
     margin-left: 4rem;
@@ -135,14 +160,14 @@
     background-color: white;
   }
   .fa-chevron-down {
-    margin-left: 15rem;
+    margin-left: 10rem;
     font-size: 25px;
     padding-left: 22px;
-    border-left: 1px solid #C4C4C4;;
+    border-left: 1px solid #c4c4c4;
   }
-  .cart{
+  .cart {
     display: block;
-   }
+  }
   .dropdown a:hover {
     background-color: #ddd;
   }
@@ -186,11 +211,11 @@
     display: block;
     background-color: white;
   }
-    .dropbtn1 .fa-chevron-down {
-    margin-left: 13rem;
+  .dropbtn1 .fa-chevron-down {
+    margin-left: 9rem;
     font-size: 25px;
     padding-left: 22px;
-    border-left: 1px solid #C4C4C4;
+    border-left: 1px solid #c4c4c4;
   }
 
   .dropdown1 a:hover {
@@ -202,91 +227,36 @@
   }
   /* ================== drop Down 2 End =================================== */
   /* --------------- Navbar Menu For Mobile End -------------------------------------------- */
-  /* ================ Sliding Section Added ================================ */
-  .container_2 {
-    position: relative;
-    width: 100%;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-  .items-position {
-    position: relative;
-  }
-  .img-heading {
-    position: absolute;
-    top: 6%;
-    right: 6%;
-  }
-  .img-heading h1 {
-    font-family: "Porter Sans Block";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 125.8%;
-    /* or 19px */
 
-    display: flex;
-    align-items: center;
-
-    background: linear-gradient(
-      124.91deg,
-      #731827 -3.15%,
-      #931323 26.26%,
-      #c53942 60.54%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
-  .Arrow-position-1 {
-    position: absolute;
-    top: 83%;
-    left: 20%;
-  }
-  .Arrow-position-2 {
-    position: absolute;
-    top: 83%;
-    right: 20%;
-  }
-  .carousel-indicators {
-    display: none;
-  }
-  .cards-items-wish {
-    position: relative;
-  }
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 100%;
-  }
-  /* ====================== Sliding Images End ============================ */
-
-  /* ====================== Section 2 ============================== ========================*/
-
-  /* ======================== Shop By Categories ================================= */
   .section-3 {
     padding-inline: 1rem;
     margin-top: 6rem;
   }
   .sectin3-heading h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
   }
   .catehories-maindiv {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 36px;
+    grid-template-columns: auto;
+    gap: 32px;
+    padding: 0px;
   }
   .img1-div {
     position: relative;
     width: fit-content;
+    display: flex;
+    /* grid-template-columns: auto; */
+    gap: 8px;
+    flex-direction: row;
   }
   .img1-div img {
-    width: 100%;
+    width: 34%;
+  }
+  .cart-detail {
+    display: flex;
+    gap: 8px;
   }
   .shop-category-button {
     position: absolute;
@@ -303,13 +273,148 @@
   .check-browscategory-button {
     border: 2px solid black;
     padding: 12px 32px;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 600;
     background-color: transparent;
   }
   .browsallcategory {
-    margin-top: 8rem;
+    margin-top: 12rem;
     text-align: center;
+  }
+
+  /* ============================== Heart Shape ================================= */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 35px;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  input[type="checkbox"] + label:before {
+    content: "\2665";
+    top: -11px;
+    left: -8px;
+    font-size: 24px;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    display: block;
+    position: absolute;
+    transition: 0.5s ease;
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+
+  input[type="checkbox"]:checked + label:after {
+    content: "\2764";
+    font-size: 40px;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    color: red;
+    transition: 0.5s ease;
+  }
+  .heart-shape {
+    position: absolute;
+    left: 26%;
+    top: -14%;
+  }
+  /* ================================ heart Shape END ======================================= */
+
+  .shoes-details {
+    font-weight: 600;
+    margin-top: 8px;
+    word-spacing: 2px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .checked {
+    color: orange;
+  }
+  .addtocart-btn {
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    font-size: 8px;
+    background-color: #60b72a;
+    padding: 6px 20px;
+  }
+  .remove-btn {
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-size: 8px;
+    background-color: #2fa7c0;
+    padding: 6px 32px;
+  }
+  .Addtocart-remove {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .date-added {
+    font-size: 8px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    word-spacing: -1px;
+  }
+
+  .end-line {
+    width: auto;
+    font-size: 12px;
+    color: #8a8a8a;
+  }
+  .enline-div {
+    margin-top: 4rem;
+  }
+  .enline-div1 {
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 44%;
+  }
+  .enline-div2 {
+    float: right;
+    margin-top: 10px;
+    width: 31%;
+  }
+  /* ================== Shop By Category END ============================== */
+
+  /* ============= More Item Explorer Section ============================ */
+
+  .section-33 {
+    padding-inline: 10px;
+    display: block;
+    margin-top: 1rem;
+  }
+  .sectin3-heading1 h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .catehories-maindiv1 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6px;
+  }
+  .img1-div1 {
+    position: relative;
+    width: fit-content;
+  }
+  .img1-div1 img {
+    width: 100%;
   }
 
   /* ============================== Heart Shape ================================= */
@@ -347,106 +452,36 @@
     content: "\2764";
     font-size: 27px;
     position: absolute;
-    top: 4px;
-    left: -3px;
+    top: -2px;
+    left: -2px;
     color: red;
     transition: 0.5s ease;
   }
-  .heart-shape {
+  .heart-shape1 {
     position: absolute;
-    right: -3%;
-    top: -3%;
+    right: -6%;
+    top: -7%;
   }
   /* ================================ heart Shape END ======================================= */
 
-  .shoes-details {
-    text-align: center;
+  .shoes-details1 {
+    text-align: left;
     font-weight: 600;
-    margin-top: 22px;
-    font-size: 14px;
-    line-height: 19px;
+    margin-top: 5px;
+    font-size: 8px;
+    line-height: 12px;
   }
   .checked {
     color: orange;
   }
 
-  .seemore-btn {
-    float: right;
-    border-radius: 28px;
-    margin-top: 12px;
-    border: 3px solid #6c6c6c;
-    margin-right: 10px;
-    background: transparent;
-    font-size: 15px;
-    color: #6c6c6c;
-    padding: 7px 27px;
-  }
   /* ================== Shop By Category END ============================== */
-
-  /* ===================== Image mobile div ======================================= */
-
-  .section-2-cardSlider {
-    margin-top: 16rem;
-    display: none;
-  }
-  .mob-sect-maindiv {
-    padding-inline: 4rem;
-    margin-top: 4rem;
-  }
-
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 100%;
-  }
-  .cards-items-wish {
-    height: 100%;
-    padding: 4px;
-    text-align: center;
-  }
-
-  .card-button-1 {
-    margin-top: 20px;
-    border: none;
-    font-size: medium;
-    font-weight: 600;
-    border-bottom: 2px solid black;
-    padding-bottom: 4px;
-    border-bottom-width: 4px;
-  }
-  .card-title {
-    font-weight: 700;
-    font-size: 26px;
-  }
-  .padding-inner {
-    position: relative;
-  }
-  .shop-category-button {
-    position: absolute;
-    top: 85%;
-    text-align: start;
-    right: 0px;
-    background-color: black;
-    font-size: 20px;
-    color: white;
-    font-weight: 700;
-    border: none;
-    padding: 3px 12px;
-  }
-  .padding-inner img {
-    width: 100%;
-  }
-  .justify-content-around {
-    gap: 4rem;
-    justify-content: center !important;
-  }
+  /* ============= More Item Explorer Section ============================ */
 
   /* ==================== Footer Section ===================================== */
   .fa {
-    padding: 8px;
-    font-size: 12px;
+    padding: 4px;
+    font-size: 11px;
     width: 4px;
     height: 4px;
     text-align: center;
@@ -514,12 +549,7 @@
     line-height: 24px;
     font-weight: 300;
   }
-  .carousel-inner > .item > img {
-    width: 100%;
-    height: 30rem;
+  .my-account-section {
+    display: none;
   }
-.mob-sect-maindiv{
-    display: block;
-}
-  /* ==================== Footer Section End ====================================== */
 }

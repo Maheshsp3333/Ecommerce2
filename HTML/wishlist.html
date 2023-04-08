@@ -10,10 +10,59 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/CSS/wishlist.css">
+    <link rel="stylesheet" href="/CSS/responsive_css/respo-wishlist.css">
+
     <title>Wishlist</title>
 </head>
 
 <body>
+     <!-- ------------------------ Navbar For Mobile ------------------------- -->
+
+     <div class="mobile-navbar">
+        <i class="fa-sharp fa-solid fa-bars" id="cart-icon"></i>
+        <h2>Shoes</h2>
+        <img src="/Images/manimage.png" alt="">
+    </div>
+
+
+    <div class="cart">
+        <div style="position: relative; border-bottom: 1px solid #C4C4C4;">
+            <h2 class="cart-title">Shoes</h2>
+
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        <!-- ========= Drop-Down Menu ========================= -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">SHOP <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">For Men</a>
+                <a href="#about">For Women</a>
+                <a href="#contact">For Trends</a>
+            </div>
+        </div>
+        <div class="best-seller">BEST SELLER</div>
+
+        <div class="dropdown1">
+            <button onclick="myFunction1()" class="dropbtn1">GIFTING <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a href="#home">For Him</a>
+                <a href="#about">For Her</a>
+            </div>
+
+
+
+            <!-- cart close -->
+
+        </div>
+    </div>
+
+    <div class="wishlist-searchbar">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search your item here...">
+    </div>
+
+
+    <!-- ================================ Mobile END ========================== -->
     <nav>
         <div class="wrapper">
             <div class="box">
@@ -29,14 +78,17 @@
                                 <a href="/index.html">HOME<i class="fa-solid fa-house fafaitem-space"></i></a>
                             </li>
                             <li>
-                                <a href="/HTML/Add_to_cart.html">CART<i class="fa-sharp fa-solid fa-basket-shopping fafaitem-space"></i>
+                                <a href="/HTML/Add_to_cart.html">CART<i
+                                        class="fa-sharp fa-solid fa-basket-shopping fafaitem-space"></i>
                                     <span class="digit-count">4</span></a>
                             </li>
                             <li>
-                                <a href="/HTML/wishlist.html">WISHLIST<i class="fa-solid fa-heart fafaitem-space"></i></a>
+                                <a href="/HTML/wishlist.html">WISHLIST<i
+                                        class="fa-solid fa-heart fafaitem-space"></i></a>
                             </li>
                             <li>
-                                <a href="/HTML/login.html">SignUp / Login<i class="fa-solid fa-user fafaitem-space"></i></a>
+                                <a href="/HTML/login.html">SignUp / Login<i
+                                        class="fa-solid fa-user fafaitem-space"></i></a>
                             </li>
                         </span>
                     </ul>
@@ -53,26 +105,30 @@
         <div class="catehories-maindiv">
             <div class="img1-div">
                 <div class="heart-shape">
-                    <input id="heart" type="checkbox" />
+                    <input id="heart1" type="checkbox" />
                     <!-- <label for="heart">❤</label> -->
-                    <label for="heart"></label>
+                    <label for="heart1"></label>
                 </div>
                 <img src="/Images/wishlist_images/wishlistimage.jpg" alt="">
-                <div class="shoes-details">
-                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
-                            class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
-                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
-                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
-                    </p>
-                    <p class="Addtocart-remove">
-                    <p class="date-added">item added on 1 octomber 2021</p>
-                    <button class="addtocart-btn">ADD TO CART</button>
-                    <button class="remove-btn">REMOVE</button>
-                    </p>
+                <div class="cart-detail">
+                    <div class="shoes-details">
+                        <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                                class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                            <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                            LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                        </p>
+                    </div>
+                    <div class="cart-add88">
+                        <p class="Addtocart-remove">
+                        <p class="date-added">item added on 1 octomber 2021</p>
+                        <button class="addtocart-btn">ADD TO CART</button><br>
+                        <button class="remove-btn">REMOVE</button>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="img1-div">
@@ -82,91 +138,100 @@
                     <label for="heart1"></label>
                 </div>
                 <img src="/Images/wishlist_images/wishlistimage.jpg" alt="">
-                <div class="shoes-details">
-                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
-                            class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
-                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
-                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
-                    </p>
-                    <p class="Addtocart-remove">
-                    <p class="date-added">item added on 1 octomber 2021</p>
-                    <button class="addtocart-btn">ADD TO CART</button>
-                    <button class="remove-btn">REMOVE</button>
-                    </p>
+                <div class="cart-detail">
+                    <div class="shoes-details">
+                        <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                                class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                            <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                            LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                        </p>
+                    </div>
+                    <div class="cart-add88">
+                        <p class="Addtocart-remove">
+                        <p class="date-added">item added on 1 octomber 2021</p>
+                        <button class="addtocart-btn">ADD TO CART</button><br>
+                        <button class="remove-btn">REMOVE</button>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="img1-div">
                 <div class="heart-shape">
-                    <input id="heart2" type="checkbox" />
+                    <input id="heart1" type="checkbox" />
                     <!-- <label for="heart">❤</label> -->
-                    <label for="heart2"></label>
-                </div>
-                <img src="/Images/wishlist_images/wishlistimage.jpg" alt="" />
-                <div class="shoes-details">
-                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
-                            class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
-                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
-                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
-                    </p>
-                    <p class="Addtocart-remove">
-                    <p class="date-added">item added on 1 octomber 2021</p>
-                    <button class="addtocart-btn">ADD TO CART</button>
-                    <button class="remove-btn">REMOVE</button>
-                    </p>
-                </div>
-            </div>
-            <div class="img1-div">
-                <div class="heart-shape">
-                    <input id="heart3" type="checkbox" />
-                    <!-- <label for="heart">❤</label> -->
-                    <label for="heart3"></label>
+                    <label for="heart1"></label>
                 </div>
                 <img src="/Images/wishlist_images/wishlistimage.jpg" alt="">
-                <div class="shoes-details">
-                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
-                            class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
-                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
-                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
-                    </p>
-                    <p class="Addtocart-remove">
-                    <p class="date-added">item added on 1 octomber 2021</p>
-                    <button class="addtocart-btn">ADD TO CART</button>
-                    <button class="remove-btn">REMOVE</button>
-                    </p>
+                <div class="cart-detail">
+                    <div class="shoes-details">
+                        <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                                class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                            <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                            LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                        </p>
+                    </div>
+                    <div class="cart-add88">
+                        <p class="Addtocart-remove">
+                        <p class="date-added">item added on 1 octomber 2021</p>
+                        <button class="addtocart-btn">ADD TO CART</button><br>
+                        <button class="remove-btn">REMOVE</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="img1-div">
+                <div class="heart-shape">
+                    <input id="heart1" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart1"></label>
+                </div>
+                <img src="/Images/wishlist_images/wishlistimage.jpg" alt="">
+                <div class="cart-detail">
+                    <div class="shoes-details">
+                        <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                                class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                            <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                            LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                        </p>
+                    </div>
+                    <div class="cart-add88">
+                        <p class="Addtocart-remove">
+                        <p class="date-added">item added on 1 octomber 2021</p>
+                        <button class="addtocart-btn">ADD TO CART</button><br>
+                        <button class="remove-btn">REMOVE</button>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- =============== Wishlist Section end ==================================================== -->
+    <!-- =============== Wishlist Section end ============================== -->
 
     <!-- ========================= End Line =================================================  -->
     <div class="enline-div">
-        <div style="float: left;
-    margin-top: 12px;
-    margin-right: 10px;
-    width: 44%;">
+        <div class="enline-div1" >
             <hr />
         </div>
         <span class="end-line"> END OF LIST </span>
-        <div style="float: right;
-    margin-top: 12px;
-    width: 46%;">
+        <div class="enline-div2" >
             <hr />
         </div>
     </div>
-    <!--=========================== End Line Section End =================================  -->
+    <!--=========================== End Line Section End ==========================  -->
+
+    
     <!-- ==================================== Wish list end  ========================== -->
 
     <!-- ================= My Account Section ======================================= -->
@@ -221,7 +286,87 @@
     </section>
     <!-- ====================== My Account Section END ======================================== -->
 
-    <!-- ======================= Footer Section Start =========================================== -->
+    <section class="section-33">
+        <div class="sectin3-heading1">
+            <h1>More items to explore</h1>
+        </div>
+        <div class="catehories-maindiv1">
+            <div class="img1-div1">
+                <div class="heart-shape1">
+                    <input id="heart" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart"></label>
+                </div>
+                <img src="/Images/desktopcategoryimg.jpg" alt="">
+                <div class="shoes-details1">
+                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                            class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                    </p>
+                </div>
+            </div>
+            <div class="img1-div1">
+                <div class="heart-shape1">
+                    <input id="heart" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart"></label>
+                </div>
+                <img src="/Images/desktopcategoryimg.jpg" alt="">
+                <div class="shoes-details1">
+                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                            class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                    </p>
+                </div>
+            </div>
+            <div class="img1-div1">
+                <div class="heart-shape1">
+                    <input id="heart" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart"></label>
+                </div>
+                <img src="/Images/desktopcategoryimg.jpg" alt="">
+                <div class="shoes-details1">
+                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                            class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+     <!-- ================ Position Fixed Section ============================ -->
+
+   <section class="fixed-div-section">
+    <div class="icons">
+      <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+      <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+      <a href="/HTML/wishlist.html"><i class="fa-solid fa-heart"></i></a>
+      <a href="/HTML/Add_to_cart.html"><i class="fa-solid fa-basket-shopping"></i><span class="digit-count1">4</span></a>
+
+    </div>
+   </section>
+
+   <!-- ================ Position Fixed Section End ========================= -->
+
+    <!-- ======================= Footer Section Start ========================== -->
     <section class="footer-section">
         <footer>
             <div class="footer-main-div">
@@ -267,7 +412,7 @@
 
     <!-- ======================= Footer Section Start =========================================== -->
 
-
+    <script src="/index.html"></script>
     <script src="/JS/wishlist.js"></script>
 </body>
 
