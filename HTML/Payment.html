@@ -10,10 +10,53 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/CSS/payment.css">
+    <link rel="stylesheet" href="/CSS/responsive_css/respo-payment.css">
     <title>Payment</title>
 </head>
 
 <body>
+    <!-- ------------------------ Navbar For Mobile ------------------------- -->
+
+    <div class="mobile-navbar">
+        <i class="fa-sharp fa-solid fa-bars" id="cart-icon"></i>
+        <h2>Shoes</h2>
+        <img src="/Images/manimage.png" alt="">
+    </div>
+
+
+    <div class="cart">
+        <div style="position: relative; border-bottom: 1px solid #C4C4C4;">
+            <h2 class="cart-title">Shoes</h2>
+
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        <!-- ========= Drop-Down Menu ========================= -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">SHOP <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">For Men</a>
+                <a href="#about">For Women</a>
+                <a href="#contact">For Trends</a>
+            </div>
+        </div>
+        <div class="best-seller">BEST SELLER</div>
+
+        <div class="dropdown1">
+            <button onclick="myFunction1()" class="dropbtn1">GIFTING <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a href="#home">For Him</a>
+                <a href="#about">For Her</a>
+            </div>
+
+
+
+            <!-- cart close -->
+
+        </div>
+    </div>
+
+
+    <!-- ================================ Mobile END ========================== -->
     <nav>
         <div class="wrapper">
             <div class="box">
@@ -29,11 +72,13 @@
                                 <a href="/index.html">HOME<i class="fa-solid fa-house fafaitem-space"></i></a>
                             </li>
                             <li>
-                                <a href="/HTML/Add_to_cart.html">CART<i class="fa-sharp fa-solid fa-basket-shopping fafaitem-space"></i>
+                                <a href="/HTML/Add_to_cart.html">CART<i
+                                        class="fa-sharp fa-solid fa-basket-shopping fafaitem-space"></i>
                                     <span class="digit-count">4</span></a>
                             </li>
                             <li>
-                                <a href="/HTML/wishlist.html">WISHLIST<i class="fa-solid fa-heart fafaitem-space"></i></a>
+                                <a href="/HTML/wishlist.html">WISHLIST<i
+                                        class="fa-solid fa-heart fafaitem-space"></i></a>
                             </li>
                             <li>
                                 <a href="#">USERNAME<i class="fa-solid fa-user fafaitem-space"></i></a>
@@ -44,27 +89,21 @@
             </div>
         </div>
     </nav>
-    <!-- ======================== Navbar END========================================= -->
+    <!-- ======================== Navbar END ========================================= -->
     <!-- ================= Payment Section Start ============================== -->
     <section class="payment-section">
         <form action="" method="get" class="payment-form">
             <div class="payment-maindiv">
-                <h1 style="font-weight: 700;color: #EA4335; font-size: 30px;">SELECT YOUR PAYMENT METHOD</h1>
-                <h3 style="font-size: 26px;
-            font-weight: 500;">Your Available Balance</h3>
+                <h1 class="payment-h1tag">SELECT YOUR PAYMENT METHOD</h1>
+                <h3 class="payment-h3tag">Your Available Balance</h3>
 
 
-                <div style="display: flex; padding-left: 8rem;"> <input type="text"
-                        placeholder="Enter Voucher Code"><button class="apply-btn">Apply</button></div>
-                <h2 style="font-size: 26px;
-                font-weight: 500;">Another Payment method</h2>
+                <div class="apply-btn-div1"> <input type="text" placeholder="Enter Voucher Code"><button
+                        class="apply-btn">Apply</button></div>
+                <h2 class="h2-anotherpayment">Another Payment method</h2>
                 <input type="radio" id="payment" name="fav_language" value="HTML">
                   <label for="payment">Pay with Debit/Credit/ATM Cards</label><br>
-                <p style="color: #9A9797;
-                font-size: 28px;
-                padding-left: 5rem;
-                line-height: normal;
-                font-weight: 600;">You can save your cards as per new RBI
+                <p class="rbi-guidelines">You can save your cards as per new RBI
                     guidelines. <a href="" style="text-decoration: none; color: #4A90E2;"> Learn More </a></p>
                 <div class="bank-imgages">
                     <img src="/Images/payment/visa.jpg" alt="">
@@ -90,7 +129,7 @@
                   <label for="Emi">EMI</label><br>
                 <div class="cash-delivery"><input type="radio" id="cashon" name="fav_language" value="HTML">
                       <label for="cashon">Cash On Delivery/Pay On Delivery</label><br>
-                    <p style="color: #9A9797; font-size: 24px; font-weight: 600;padding-left: 4rem;">Scan & Pay using
+                    <p class="cashon-delivery">Scan & Pay using
                         app. Cash, UPI, Cards
                         also accepted. <a href="" style="text-decoration: none; color: #4A90E2;"> Know more.</a></p>
                 </div>
@@ -101,7 +140,20 @@
         </form>
 
     </section>
+    <!-- ================ Position Fixed Section ============================ -->
 
+    <section class="fixed-div-section">
+        <div class="icons">
+            <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+            <a href="/HTML/wishlist.html"><i class="fa-solid fa-heart"></i></a>
+            <a href="/HTML/Add_to_cart.html"><i class="fa-solid fa-basket-shopping"></i><span
+                    class="digit-count1">4</span></a>
+
+        </div>
+    </section>
+
+    <!-- ================ Position Fixed Section End ========================= -->
 
     <!-- ======================= Footer Section Start =========================================== -->
     <section class="footer-section">
@@ -148,6 +200,7 @@
     </section>
 
     <!-- ======================= Footer Section End =========================================== -->
+    <script src="/JS/wishlist.js"></script>
 </body>
 
 </html>

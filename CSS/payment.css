@@ -297,7 +297,39 @@ input[type="radio" i] {
   width: 18px;
   height: 18px;
 }
+/* --------------------------------new */
+.payment-h1tag {
+  font-weight: 700;
+  color: #ea4335;
+  font-size: 30px;
+}
+.payment-h3tag {
+  font-size: 26px;
+  font-weight: 500;
+}
+.apply-btn-div1 {
+  display: flex;
+  padding-left: 8rem;
+}
+.h2-anotherpayment {
+  font-size: 26px;
+  font-weight: 500;
+}
+.rbi-guidelines {
+  color: #9a9797;
+  font-size: 28px;
+  padding-left: 5rem;
+  line-height: normal;
+  font-weight: 600;
+}
+.cashon-delivery {
+  color: #9a9797;
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 4rem;
+}
 
+/* --------------------------------- end */
 /* ========================== Payment Section End =================================== */
 
 .place-order-div {
@@ -390,6 +422,15 @@ input[type="radio" i] {
   font-size: 21px;
   line-height: 56px;
   font-weight: 300;
+}
+.mobile-navbar{
+  display: none;
+}
+.cart{
+  display: none;
+}
+.fixed-div-section{
+  display: none;
 }
 
 /* ========================== Footer Section End ========================== */
