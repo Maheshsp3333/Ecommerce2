@@ -430,14 +430,14 @@
   }
 
   input[type="checkbox"] + label:before {
-    content: "\2665";
+    content: "\2661";
     top: -11px;
-    left: -8px;
-    font-size: 30px;
+    left: -10px;
+    font-size: 20px;
     border: 1px solid transparent;
     padding: 10px;
     border-radius: 3px;
-    color: white;
+    color: #ffffff;
     display: block;
     position: absolute;
     transition: 0.5s ease;
@@ -450,9 +450,9 @@
 
   input[type="checkbox"]:checked + label:after {
     content: "\2764";
-    font-size: 27px;
+    font-size: 19px;
     position: absolute;
-    top: -2px;
+    top: 2px;
     left: -2px;
     color: red;
     transition: 0.5s ease;
