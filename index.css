@@ -546,3 +546,32 @@ input[type="checkbox"]:checked + label:after {
   display: none;
  }
 /* ==================== Footer Section End ====================================== */
+
+/* ==================== Normal Small Desktop Screen========================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .navleft {
+    margin-left: 0rem;
+}
+nav a {
+  display: block;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+.section-3 {
+  padding-inline: 6rem;
+  margin-top: 6rem;
+}
+.justify-content-around{
+  justify-content: center!important;
+}
+.shop-category-button{
+  top: 87%;
+}
+.footer-main-div{
+  gap: 52px;
+}
+}
