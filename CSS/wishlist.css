@@ -596,5 +596,17 @@ body {
     line-height: 56px;
     font-weight: 300;
 }
+.mobile-navbar{
+  display: none;
+}
+.cart{
+  display: none;
+}
+.fixed-div-section{
+  display: none;
+}
+.wishlist-searchbar{
+  display: none;
+}
 
 /* ========================== Footer Section End ========================== */

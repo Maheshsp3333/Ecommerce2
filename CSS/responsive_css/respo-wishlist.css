@@ -552,4 +552,7 @@
   .my-account-section {
     display: none;
   }
+  .wishlist-searchbar{
+    display: block;
+  }
 }
