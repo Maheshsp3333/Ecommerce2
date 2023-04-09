@@ -587,7 +587,7 @@ th {
   }
   nav a {
     display: block;
-    padding: 8px;
+    padding: 4px;
     font-size: 14px;
     text-decoration: none;
     color: inherit;
@@ -597,19 +597,28 @@ th {
   margin-top: 3rem;
 }
 .Adresses-save{
+  align-items: center;
   gap: 2rem;
+}
+.Adresses-save h2{
+  font-size: 16px;
 }
 .save-for-later{
   gap: 1rem;
 }
 .save-for-later h3{
-font-size: 15px;
+font-size: 12px;
+}
+.discount-per{
+  font-size: 15px;
 }
 .shoes-details{
   font-size: 15px;
 }
 .footer-main-div{
-  gap: 70px;
+  gap: 34px;
+}
+.img1-div{
+  gap: 1rem;
 }
 }
-
