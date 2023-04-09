@@ -10,11 +10,55 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/CSS/add_to_cart.css">
+    <link rel="stylesheet" href="/CSS/responsive_css/respo-add_cart.css">
 
     <title>Cart</title>
 </head>
 
 <body>
+     <!-- ------------------------ Navbar For Mobile ------------------------- -->
+
+     <div class="mobile-navbar">
+        <i class="fa-sharp fa-solid fa-bars" id="cart-icon"></i>
+        <h2>Shoes</h2>
+        <img src="/Images/manimage.png" alt="">
+    </div>
+
+
+    <div class="cart">
+        <div style="position: relative; border-bottom: 1px solid #C4C4C4;">
+            <h2 class="cart-title">Shoes</h2>
+
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        <!-- ========= Drop-Down Menu ========================= -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">SHOP <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">For Men</a>
+                <a href="#about">For Women</a>
+                <a href="#contact">For Trends</a>
+            </div>
+        </div>
+        <div class="best-seller">BEST SELLER</div>
+
+        <div class="dropdown1">
+            <button onclick="myFunction1()" class="dropbtn1">GIFTING <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a href="#home">For Him</a>
+                <a href="#about">For Her</a>
+            </div>
+
+
+
+            <!-- cart close -->
+
+        </div>
+    </div>
+
+
+    <!-- ================================ Mobile END ========================== -->
+
     <nav>
         <div class="wrapper">
             <div class="box">
@@ -64,13 +108,12 @@
                         <img src="/Images/cart_images/cartimage.jpg" alt="">
                         <div class="shoes-details">
                             <p> PUMA PURE XT FRESH TRAINING & <br> GYM SHOES FOR MEN <br>
-                            <h5 style="color: #6C6C6C;font-size: 16px;">Size: 8, Grey</h5>
-                            <span
-                                style="display: inline-flex;color: #6C6C6C;"><strike>&#x20B9;649.00</strike>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <h4 style="color: #11575C;font-size: 22px;">&#x20B9;3,289</h4></span>
-                            <p style="font-size: 20px; color: #34A853;">53% OFF <br> 3 OFFERS APPLIED</p>
+                            <h5 class="product-color" >Size: 8, Grey</h5>
+                            <span class="span-strike"><strike>&#x20B9;649.00</strike>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <h4 class="product-price">&#x20B9;3,289</h4></span>
+                            <p class="discount-per" >53% OFF <br> 3 OFFERS APPLIED</p>
                             </p>
-                            <span style="display: inline-flex; gap: 5rem; margin-top: 3rem;">
+                            <span class="save-for-later">
                                 <h3>SAVE FOR LATER</h3>
                                 <h3>REMOVE</h3>
                             </span>
@@ -87,13 +130,34 @@
                         <img src="/Images/cart_images/cartimage.jpg" alt="">
                         <div class="shoes-details">
                             <p> PUMA PURE XT FRESH TRAINING & <br> GYM SHOES FOR MEN <br>
-                            <h5 style="color: #6C6C6C;font-size: 16px;">Size: 8, Grey</h5>
-                            <span
-                                style="display: inline-flex;color: #6C6C6C;"><strike>&#x20B9;649.00</strike>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <h4 style="color: #11575C;font-size: 22px;">&#x20B9;3,289</h4></span>
-                            <p style="font-size: 20px; color: #34A853;">53% OFF <br> 3 OFFERS APPLIED</p>
+                            <h5 class="product-color" >Size: 8, Grey</h5>
+                            <span class="span-strike"><strike>&#x20B9;649.00</strike>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <h4 class="product-price">&#x20B9;3,289</h4></span>
+                            <p class="discount-per" >53% OFF <br> 3 OFFERS APPLIED</p>
                             </p>
-                            <span style="display: inline-flex; gap: 5rem; margin-top: 3rem;">
+                            <span class="save-for-later">
+                                <h3>SAVE FOR LATER</h3>
+                                <h3>REMOVE</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catehories-maindiv">
+                    <div class="img1-div">
+                        <div class="heart-shape">
+                            <input id="heart3" type="checkbox" />
+                            <!-- <label for="heart">❤</label> -->
+                            <label for="heart3"></label>
+                        </div>
+                        <img src="/Images/cart_images/cartimage.jpg" alt="">
+                        <div class="shoes-details">
+                            <p> PUMA PURE XT FRESH TRAINING & <br> GYM SHOES FOR MEN <br>
+                            <h5 class="product-color" >Size: 8, Grey</h5>
+                            <span class="span-strike"><strike>&#x20B9;649.00</strike>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <h4 class="product-price">&#x20B9;3,289</h4></span>
+                            <p class="discount-per" >53% OFF <br> 3 OFFERS APPLIED</p>
+                            </p>
+                            <span class="save-for-later">
                                 <h3>SAVE FOR LATER</h3>
                                 <h3>REMOVE</h3>
                             </span>
@@ -134,12 +198,27 @@
                     font-size: 24px;
                     font-weight: 700;
                     color: #34A853;">You will save &#8377;7,420 on <br> this order </p>
+                    <div class="secure-payment"><img src="/Images/cart_images/Safeandsecurepayment.png" alt=""><p>Safe and Secure Payments. <br> Easy returns. <br>
+                        100% Authentic products.</p></div>
                 </div>
-                <div class="secure-payment"><img src="/Images/cart_images/Safeandsecurepayment.png" alt=""><p>Safe and Secure Payments. <br> Easy returns. <br>
-                    100% Authentic products.</p></div>
+                
             </div>
         </div>
     </section>
+    <!-- ================ Position Fixed Section ============================ -->
+
+   <section class="fixed-div-section">
+    <div class="icons">
+      <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+      <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+      <a href="/HTML/wishlist.html"><i class="fa-solid fa-heart"></i></a>
+      <a href="/HTML/Add_to_cart.html"><i class="fa-solid fa-basket-shopping"></i><span class="digit-count1">4</span></a>
+
+    </div>
+   </section>
+
+   <!-- ================ Position Fixed Section End ========================= -->
+
     <!-- =============== Footer Section Start ========================================= -->
        <!-- ======================= Footer Section Start =========================================== -->
     <section class="footer-section">
@@ -186,7 +265,7 @@
     </section>
 
     <!-- ======================= Footer Section End =========================================== -->
-    
+    <script src="/JS/wishlist.js"></script>
 </body>
 
 </html>

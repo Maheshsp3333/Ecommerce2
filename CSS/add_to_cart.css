@@ -465,6 +465,30 @@ th {
   font-weight: 700;
   color: #6c6c6c;
 }
+/* ---------------------------------------------------new */
+.product-color{
+  color: #6C6C6C;
+  font-size: 16px
+}
+.span-strike{
+  display: inline-flex;
+  color: #6C6C6C;
+}
+.product-price{
+  color: #11575C;
+  font-size: 22px;
+}
+.discount-per{
+  font-size: 20px;
+   color: #34A853;
+}
+.save-for-later{
+  display: inline-flex; 
+  gap: 5rem;
+   margin-top: 3rem;
+
+}
+/* ----------------------------------------------------end */
 
 /* ================== Shop By Category END ============================== */
 
