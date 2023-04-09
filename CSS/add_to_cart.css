@@ -579,3 +579,37 @@ th {
 
 /* ========================== Footer Section End ========================== */
 
+/* ================ Normal Desktop Size ============================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .navleft {
+    margin-left: 0rem;
+  }
+  nav a {
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+}
+.section-1 {
+  padding-inline: 2rem;
+  margin-top: 3rem;
+}
+.Adresses-save{
+  gap: 2rem;
+}
+.save-for-later{
+  gap: 1rem;
+}
+.save-for-later h3{
+font-size: 15px;
+}
+.shoes-details{
+  font-size: 15px;
+}
+.footer-main-div{
+  gap: 70px;
+}
+}
+
