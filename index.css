@@ -542,4 +542,7 @@ input[type="checkbox"]:checked + label:after {
  .fixed-div-section{
   display: none;
  }
+ .checkalllatest-mobile{
+  display: none;
+ }
 /* ==================== Footer Section End ====================================== */

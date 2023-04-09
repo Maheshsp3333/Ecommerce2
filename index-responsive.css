@@ -360,7 +360,7 @@
     font-weight: 600;
     background-color: transparent;
   }
-  .checkalllatest {
+  .checkalllatest-mobile {
     margin-top: 4rem;
     text-align: center;
   }
@@ -494,6 +494,9 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+  }
+  .checkalllatest-mobile{
+    display: block;
   }
 
   /* ==================== Footer Section End ====================================== */
