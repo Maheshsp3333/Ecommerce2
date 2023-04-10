@@ -448,14 +448,15 @@ nav a {
   color: inherit;
 }
 .footer-main-div{
+  display: none;
   gap: 40px;
 }
 .payment-maindiv {
   background-color: #ffffff;
-  line-height: 60px;
-  word-spacing: 6px;
+  line-height: 55px;
+  word-spacing: 3px;
   padding-bottom: 2rem;
-  font-size: 20px;
+  font-size: 22px;
   padding-top: 2rem;
   padding-inline: 3rem;
 }
@@ -467,6 +468,23 @@ nav a {
   font-weight: 700;
   color: #ea4335;
   font-size: 18px;
+}
+.rbi-guidelines {
+  color: #9a9797;
+  font-size: 14px;
+  padding-left: 5rem;
+  line-height: normal;
+  font-weight: 600;
+}
+.h2-anotherpayment {
+  font-size: 18px;
+  font-weight: 500;
+}
+.cashon-delivery {
+  color: #9a9797;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 2rem;
 }
 .payment-h3tag {
   font-size: 20px;
