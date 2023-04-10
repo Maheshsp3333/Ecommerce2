@@ -610,3 +610,105 @@ body {
 }
 
 /* ========================== Footer Section End ========================== */
+/* ====================== Desktop Site View ===================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .navleft {
+    margin-left: 2rem;
+}
+nav a {
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+}
+.navArea .circle1 {
+  border-radius: 50%;
+  margin-left: 4rem;
+  padding: 22px;
+  margin-bottom: -19px;
+  background-color: #fff;
+}
+.sectin3-heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.my-account-section {
+  padding-inline: 4rem;
+}
+.section-3 {
+  padding-inline: 4rem;
+  margin-top: 2rem;
+}
+.footer-main-div{
+  gap: 50px;
+}
+.clickable-link {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 21px;
+  margin-left: 25px;
+  color: #565656;
+}
+.subsection-2 {
+  flex: 1;
+  color: #565656;
+  font-size: 15px;
+  border-right: 1px solid #C4C4C4;
+}
+.divide-three {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  gap: 2rem;
+}
+.shoes-details {
+  font-weight: 600;
+  margin-top: 12px;
+  word-spacing: 8px;
+  font-size: 20px;
+  line-height: 26px;
+}
+.catehories-maindiv{
+  margin-top: 2rem;
+}
+input[type="checkbox"] + label:before {
+  content: "\2661";
+  top: -11px;
+  left: -8px;
+  font-size: 40px;
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  display: block;
+  position: absolute;
+  transition: 0.5s ease;
+}
+.heart-shape {
+  position: absolute;
+  left: 34%;
+  top: -3%;
+}
+input[type="checkbox"]:checked + label:after {
+  content: "\2764";
+  font-size: 34px;
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  color: red;
+  transition: 0.5s ease;
+}
+.enline-div2 {
+  float: right;
+  margin-top: 12px;
+  width: 43%;
+}
+.end-line {
+  width: auto;
+  font-size: 18px;
+  color: #8A8A8A;
+}
+
+}

@@ -434,3 +434,42 @@ input[type="radio" i] {
 }
 
 /* ========================== Footer Section End ========================== */
+/* ====================== Desktop Site View ===================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .navleft {
+    margin-left: 1rem;
+}
+nav a {
+  display: block;
+  padding: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+}
+.footer-main-div{
+  gap: 40px;
+}
+.payment-maindiv {
+  background-color: #ffffff;
+  line-height: 60px;
+  word-spacing: 6px;
+  padding-bottom: 2rem;
+  font-size: 20px;
+  padding-top: 2rem;
+  padding-inline: 3rem;
+}
+.payment-section {
+  padding-inline: 2rem;
+  margin-top: 3rem;
+}
+.payment-h1tag {
+  font-weight: 700;
+  color: #ea4335;
+  font-size: 18px;
+}
+.payment-h3tag {
+  font-size: 20px;
+  font-weight: 500;
+}
+}
