@@ -563,3 +563,60 @@ input[type="checkbox"]:checked + label:after {
  }
 
 /* ========================== Footer Section End ========================== */
+
+/* ==================== Desktop Category =========================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section-3 {
+    padding-inline: 4rem;
+    margin-top: 6rem;
+}
+nav a {
+  display: block;
+  font-size: 14px;
+  padding: 6px;
+  text-decoration: none;
+  color: inherit;
+}
+.navleft {
+  margin-left: 5rem;
+}
+input[type="checkbox"] + label:before{
+  content: "\2661";
+    top: -11px;
+    left: -8px;
+    font-size: 40px;
+}
+.heart-shape {
+  position: absolute;
+  right: 5%;
+  top: 1%;
+}
+input[type="checkbox"]:checked + label:after {
+  content: "\2764";
+  font-size: 34px;
+  position: absolute;
+  top: 1px;
+  left: -2px;
+  color: red;
+  transition: 0.5s ease;
+}
+.footer-main-div{
+  gap: 54px;
+}
+.justify-content-around {
+  gap: 1rem;
+  justify-content: center!important;
+}
+.shop-category-button {
+  position: absolute;
+  top: 84%;
+  text-align: start;
+  right: 0px;
+  background-color: black;
+  font-size: 28px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 3px 12px;
+}
+}
