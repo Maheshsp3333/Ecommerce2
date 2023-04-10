@@ -1,24 +1,15 @@
-@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background-image: url(/Images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-input[type="text"],
+@media (min-width: 340px) and (max-width: 480px) {
+
+    input[type="text"],
 input[type="password"] {
-  width: 100%;
-  padding: 12px 20px;
-  font-size: 18px;
-  margin: 8px 0;
-  border: 1px solid #22a1a9;
-  border-radius: 10px;
-  display: inline-block;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 18px;
+    margin: 8px 0;
+    border: 1px solid #22a1a9;
+    border-radius: 10px;
+    display: inline-block;
+    box-sizing: border-box;
 }
 input[type="text"]:hover,
 input[type="password"]:hover {
@@ -27,7 +18,7 @@ input[type="password"]:hover {
  
 }
 .username-div{
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 button {
@@ -44,7 +35,7 @@ button {
   border: none;
   cursor: pointer;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
   width: 100%;
 }
 
@@ -74,10 +65,11 @@ img.avatar {
 }
 
 span.psw {
-  float: right;
-  color: #9a9797;
-  font-size: 20px;
-  font-weight: 600;
+    float: left;
+    margin-bottom: 1rem;
+    color: #9a9797;
+    font-size: 20px;
+    font-weight: 600;
 }
 .end-line {
   width: auto;
@@ -101,20 +93,20 @@ span.psw {
 /* ====================== Login Form section ====================================== */
 
 .login-form-section {
-  padding-inline: 20rem;
-  margin-top: 4rem;
-  margin-bottom: 8rem;
+    padding-inline: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
 }
 .login-form-div {
   background-color: white;
-  padding-inline: 4rem;
+  padding-inline: 1rem;
   padding-top: 4rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 13px;
 }
 label b {
-  font-size: 28px;
+  font-size: 18px;
   color: #6c6c6c;
 }
 .username-icon {
@@ -141,20 +133,20 @@ label b {
   color: #22a1a9;
 }
 .sign-in-with-fb {
-  background: transparent;
-  border: 2px solid #03c0fc;
-  color: black;
-  padding: 14px 20px;
-  border-radius: 24px;
-  margin: 8px 0;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 24px;
-  width: 100%;
+    background: transparent;
+    border: 2px solid #03c0fc;
+    color: black;
+    padding: 8px 8px;
+    border-radius: 24px;
+    margin: 8px 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    width: 100%;
 }
 .social-icon-1 {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 14px;
 }
 .sign-in-with-google {
@@ -175,42 +167,42 @@ label b {
   border-radius: 24px;
   border: 2px solid transparent;
   color: black;
-  padding: 14px 20px;
+  padding: 8px 8px;
   margin: 8px 0;
   cursor: pointer;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   width: 100%;
 }
 .social-icon-1 img {
   position: absolute;
-  left: 15px;
-  top: 9px;
-  height: 73%;
+  left: 14px;
+    top: 8px;
+    height: 73%;
 }
 .sign-in-with-apple {
   background: transparent;
   border: 2px solid #000000;
   color: black;
-  padding: 14px 20px;
+  padding: 8px 8px;
   border-radius: 24px;
   margin: 8px 0;
   cursor: pointer;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   width: 100%;
 }
 
 .social-icon {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .social-icon .fa-brands {
-  position: absolute;
-  top: 16px;
-  font-size: 40px;
-  color: #03c0fc;
-  left: 25px;
+    position: absolute;
+    top: 14px;
+    font-size: 27px;
+    color: #03c0fc;
+    left: 14px;
 }
 .social-icon .fa-apple {
   position: absolute;
@@ -221,10 +213,10 @@ label b {
 }
 .social-icon .fa-apple {
   position: absolute;
-  top: 16px;
-  font-size: 40px;
-  color: black;
-  left: 25px;
+    top: 14px;
+    font-size: 28px;
+    color: black;
+    left: 22px;
 }
 .signup-link {
   text-align: center;
@@ -241,21 +233,15 @@ label b {
   font-weight: 600;
 }
 .enline-div-2{
-  float: left;
-    margin-top: 12px;
-    margin-right: 10px;
-    width: 44%;
-}
-.end-line-2{
-  float: right;
-    margin-top: 12px;
-    width: 46%;
-}
-
-/* =========================== desktop category normal size ====================== */
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .login-form-section{
-    padding-inline: 8rem;
+    float: left;
+      margin-top: 12px;
+      margin-right: 10px;
+      width: 40%;
   }
+  .end-line-2{
+    float: right;
+      margin-top: 12px;
+      width: 46%;
+  }
+
 }

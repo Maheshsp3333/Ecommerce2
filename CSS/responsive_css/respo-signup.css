@@ -1,19 +1,10 @@
-@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background-image: url(/Images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-input[type="text"],
+@media (min-width: 340px) and (max-width: 480px) {
+
+    input[type="text"],
 input[type="password"] {
   width: 100%;
-  padding: 12px 20px;
-  font-size: 18px;
+  padding: 12px 8px;
+  font-size: 15px;
   margin: 8px 0;
   border: 1px solid #22a1a9;
   border-radius: 10px;
@@ -27,7 +18,7 @@ input[type="password"]:hover {
  
 }
 label{
-  font-size: 28px;
+  font-size: 24px;
 }
 .username-div{
   margin-top: 1rem;
@@ -48,7 +39,7 @@ button {
   border: none;
   cursor: pointer;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   width: 100%;
 }
 
@@ -105,14 +96,14 @@ span.psw {
 /* ====================== Login Form section ====================================== */
 
 .login-form-section {
-  padding-inline: 20rem;
+  padding-inline: 1rem;
   margin-top: 4rem;
   margin-bottom: 8rem;
 }
 .login-form-div {
   background-color: white;
-  padding-inline: 4rem;
-  padding-top: 4rem;
+  padding-inline: 1rem;
+  padding-top: 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 13px;
@@ -135,9 +126,5 @@ label b {
 .username-icon .fa-solid:hover {
   color: #22a1a9;
 }
-/* ================= Screeen Size Normal Desktop ================= */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .login-form-section{
-    padding-inline: 8rem;
-  }
+
 }
