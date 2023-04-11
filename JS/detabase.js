@@ -1,12 +1,10 @@
 
-const mysql = require('mysql');
+var mysql = require('mysql');
 
-const con = mysql.createConnection({
+var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Mahesh8336#",
-  serverVersion: '8.0'
-
+  password: "Mahesh8336#"
 });
 
 con.connect(function(err) {
