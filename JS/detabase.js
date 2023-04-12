@@ -64,6 +64,8 @@ createUserWithEmailAndPassword(auth, uname, password)
 };
 
 // ================ Password Visible or Not Validation =============================//
+const password_show = document.getElementById("password-show");
+password_show.addEventListener("click", myFunctionps1);
 
 function myFunctionps1() {
   var x = document.getElementById("psw");
@@ -73,6 +75,9 @@ function myFunctionps1() {
     x.type = "password";
   }
 }
+
+const password_show2 = document.getElementById("password-show2");
+password_show2.addEventListener("click", myFunctionps2);
 function myFunctionps2() {
   var y = document.getElementById("psw-r");
   if (y.type === "password") {
