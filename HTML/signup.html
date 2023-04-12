@@ -24,7 +24,7 @@
             <h2 style="font-size: 35px;
         color: #565656;
         text-align: center;">SignUp</h2>
-            <form id="signupForm">
+            
 
                 <div class="container">
                     <div class="username-div">
@@ -50,16 +50,23 @@
                     <div class="username-div">
                         <label for="psw" style="padding-top: 1rem;">Password</label>
                         <div class="username-icon">
-                            <input type="password" placeholder="Enter your password" id="psw" required>
-                            <span class="fa-solid fa-eye-slash"></span>
+                            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter your password" id="psw" required>
+                            <span class="fa-solid fa-eye-slash" onclick="myFunctionps1()"></span>
                         </div>
+                        <div id="message">
+                            <h3>Password must contain the following:</h3>
+                            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                            <p id="number" class="invalid">A <b>number</b></p>
+                            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                          </div>
                     </div>
 
                     <div class="username-div">
                         <label for="psw-r" style="padding-top: 1rem;">Password</label>
                         <div class="username-icon">
-                            <input type="password" placeholder="Re-type your password" id="psw-r" required>
-                            <span class="fa-solid fa-eye-slash"></span>
+                            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Re-type your password" id="psw-r" required>
+                            <span class="fa-solid fa-eye-slash" onclick="myFunctionps2()"></span>
                         </div>
                     </div>
 
@@ -74,16 +81,18 @@
                                 Conditions</a>
                         </label>
                     </div>
-                    <button type="submit">Sign Up</button>
-            </form>
+                    <button type="submit" id="signupForm">Sign Up</button>
+            
             <div style="text-align: center; margin-top: 2rem; padding-bottom: 4rem;"><a href="/HTML/login.html" style="text-decoration: none;
                 color: #6C6C6C;
                 font-size: 24px;">I'm already a member</a></div>
         </div>
     </section>
-
+     
+    <!-- <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script> -->
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-<script src="/JS/detabase.js"></script>
+<script type="module" src="/JS/detabase.js"></script>
 </body>
 
 </html>
