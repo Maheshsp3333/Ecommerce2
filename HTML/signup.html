@@ -30,7 +30,7 @@
                     <div class="username-div">
                         <label for="uname">Username</label>
                         <div class="username-icon">
-                            <input type="text" placeholder="Enter Your Username" id="uname" required>
+                            <input type="email" placeholder="Enter Your E-mail" id="uname" required>
                         </div>
                     </div>
                     <div class="username-div">
@@ -63,7 +63,7 @@
                     </div>
 
                     <div class="username-div">
-                        <label for="psw-r" style="padding-top: 1rem;">Password</label>
+                        <label for="psw-r" style="padding-top: 1rem;">Re Type-Password</label>
                         <div class="username-icon">
                             <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Re-type your password" id="psw-r" required>
                             <span class="fa-solid fa-eye-slash" id="password-show2"></span>
@@ -77,11 +77,11 @@
                         <label style="color: #9A9797;
                               font-size: 24px;
                                 font-weight: 500;" >
-                            <input type="checkbox" checked="checked" name="remember"> Agree with <a style="color: #4A90E2;" href="">Terms &
+                            <input type="checkbox" name="terms" id="terms-condition" name="remember" required> Agree with <a style="color: #4A90E2;" href="">Terms &
                                 Conditions</a>
                         </label>
                     </div>
-                    <button type="submit" id="signupForm">Sign Up</button>
+                    <button type="submit" id="signupForm" >Sign Up</button>
             
             <div style="text-align: center; margin-top: 2rem; padding-bottom: 4rem;"><a href="/HTML/login.html" style="text-decoration: none;
                 color: #6C6C6C;

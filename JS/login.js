@@ -1,13 +1,15 @@
 //  ==================== Google Firebase Connection =================//
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
   import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
-  import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+  import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,onAuthStateChanged  } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+  
+  
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
+  var firebaseConfig = {
     apiKey: "AIzaSyBiYr1gT11NgVT9-OHHf0j1JQbdH5MgYIM",
     authDomain: "ecommerce-signup-a9cf9.firebaseapp.com",
     databaseURL: "https://ecommerce-signup-a9cf9-default-rtdb.firebaseio.com",
@@ -21,7 +23,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebas
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const database = getDatabase(app);
-const auth = getAuth();
+const auth = getAuth(app);
 
 const login = document.getElementById("login");
 login.addEventListener("click", loginFunction);
@@ -48,3 +50,14 @@ login.addEventListener("click", loginFunction);
    });
  
   };
+
+  const password_show2 = document.getElementById("password-show");
+password_show2.addEventListener("click", myFunctionps2);
+function myFunctionps2() {
+  var y = document.getElementById("psw-r");
+  if (y.type === "password") {
+    y.type = "text";
+  } else {
+    y.type = "password";
+  }
+}

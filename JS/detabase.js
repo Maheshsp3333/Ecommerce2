@@ -166,3 +166,16 @@ myInput.onkeyup = function() {
 }
 
 // ================= Firebase Login Page Open ===============//
+
+// ====================== terms And Conditions Accept =====================
+
+const termandcondition = document.getElementById("terms-condition");
+termandcondition.addEventListener("click", termconditions);
+function termconditions() {
+  if(!termandcondition.terms.checked) {
+    alert("Please indicate that you accept the Terms and Conditions");
+    termandcondition.terms.focus();
+    return false;
+  }
+  return true;
+};
