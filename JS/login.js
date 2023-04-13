@@ -1,7 +1,8 @@
 //  ==================== Google Firebase Connection =================//
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
   import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
-  import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,onAuthStateChanged  } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+  import { getAuth,signInWithEmailAndPassword,signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+ 
   
   
   // TODO: Add SDKs for Firebase products that you want to use
@@ -23,7 +24,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebas
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const database = getDatabase(app);
-const auth = getAuth(app);
+const auth = getAuth();
 
 const login = document.getElementById("login");
 login.addEventListener("click", loginFunction);
@@ -50,6 +51,26 @@ login.addEventListener("click", loginFunction);
    });
  
   };
+
+// ==================== Sign In With Google =======================//
+
+const signinwithgoogle = document.getElementById("signin-with-google");
+signinwithgoogle.addEventListener("click", signingoogle);
+    
+       function signingoogle(){
+       const googleprovider = new firebaseConfig.auth.GoogleAuthProvider();
+       auth.signInwithPopup(googleprovider)
+       .then(()=>{
+        window.location.assign('/index.html');
+       })
+       .catch(error => {
+        console.error(error);
+       })
+
+     
+       }
+
+
 
   const password_show2 = document.getElementById("password-show");
 password_show2.addEventListener("click", myFunctionps2);
