@@ -8,7 +8,7 @@ import {
 import {
   getAuth,
   signInWithEmailAndPassword,
-  GoogleAuthProvider,signInWithRedirect,getRedirectResult,signInWithPopup
+  GoogleAuthProvider,signInWithRedirect,getRedirectResult,signInWithPopup,signOut 
 } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -85,6 +85,19 @@ function signingoogle() {
     // ...
   });
   }
+
+  const signout = document.getElementById("logout-btn");
+  signout.addEventListener("click", signout);
+
+function signout() {
+  signOut(auth).then(() => {
+    window.location.href = "/HTML/login.html";
+  }).catch((error) => {
+    // An error happened.
+  });
+}
+
+
 
 const password_show2 = document.getElementById("password-show");
 password_show2.addEventListener("click", myFunctionps2);
