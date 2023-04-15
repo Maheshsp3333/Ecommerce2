@@ -1,78 +1,93 @@
 //  ==================== Google Firebase Connection =================//
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-  import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
-  import { getAuth,signInWithEmailAndPassword,signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
- 
-  
-  
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+import {
+  getDatabase,
+  ref,
+  set,
+} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  GoogleAuthProvider,signInWithRedirect,getRedirectResult
+} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyBiYr1gT11NgVT9-OHHf0j1JQbdH5MgYIM",
-    authDomain: "ecommerce-signup-a9cf9.firebaseapp.com",
-    databaseURL: "https://ecommerce-signup-a9cf9-default-rtdb.firebaseio.com",
-    projectId: "ecommerce-signup-a9cf9",
-    storageBucket: "ecommerce-signup-a9cf9.appspot.com",
-    messagingSenderId: "996484563271",
-    appId: "1:996484563271:web:2149b7e2f57747822a0c62",
-    measurementId: "G-ZP1D45ENLG"
-  };
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const database = getDatabase(app);
-const auth = getAuth();
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBiYr1gT11NgVT9-OHHf0j1JQbdH5MgYIM",
+  authDomain: "ecommerce-signup-a9cf9.firebaseapp.com",
+  databaseURL: "https://ecommerce-signup-a9cf9-default-rtdb.firebaseio.com",
+  projectId: "ecommerce-signup-a9cf9",
+  storageBucket: "ecommerce-signup-a9cf9.appspot.com",
+  messagingSenderId: "996484563271",
+  appId: "1:996484563271:web:0b9d1f6436ed6a762a0c62",
+  measurementId: "G-KGDY6QJYXS"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider(app);
 
 const login = document.getElementById("login");
 login.addEventListener("click", loginFunction);
-    
-       function loginFunction(){
-    var uname = document.getElementById('uname').value;
-    var password = document.getElementById('psw').value;
- 
-       signInWithEmailAndPassword(auth, uname, password)
-       .then((userCredential) => {
-         // Signed in 
-         const user = userCredential.user;
- 
-         window.location.href = "/index.html";
- 
-          alert('User loged in!');
-         // ...
-       })
-       .catch((error) => {
-         const errorCode = error.code;
-         const errorMessage = error.message;
- 
-         alert(errorMessage);
-   });
- 
-  };
+
+function loginFunction() {
+  var uname = document.getElementById("uname").value;
+  var password = document.getElementById("psw").value;
+
+  signInWithEmailAndPassword(auth, uname, password)
+    .then((userCredential) => {
+      // Signed in
+      const user = userCredential.user;
+
+      window.location.href = "/index.html";
+
+      alert("User loged in!");
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+
+      alert(errorMessage);
+    });
+}
 
 // ==================== Sign In With Google =======================//
 
 const signinwithgoogle = document.getElementById("signin-with-google");
 signinwithgoogle.addEventListener("click", signingoogle);
-    
-       function signingoogle(){
-       const googleprovider = new firebaseConfig.auth.GoogleAuthProvider();
-       auth.signInwithPopup(googleprovider)
-       .then(()=>{
-        window.location.assign('/index.html');
-       })
-       .catch(error => {
-        console.error(error);
-       })
 
-     
-       }
+function signingoogle() {
+  signInWithRedirect(auth, provider);
+  getRedirectResult(auth)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access Google APIs.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
 
+    // The signed-in user info.
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+  });
+  }
 
-
-  const password_show2 = document.getElementById("password-show");
+const password_show2 = document.getElementById("password-show");
 password_show2.addEventListener("click", myFunctionps2);
 function myFunctionps2() {
   var y = document.getElementById("psw-r");

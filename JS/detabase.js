@@ -15,8 +15,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebas
     projectId: "ecommerce-signup-a9cf9",
     storageBucket: "ecommerce-signup-a9cf9.appspot.com",
     messagingSenderId: "996484563271",
-    appId: "1:996484563271:web:2149b7e2f57747822a0c62",
-    measurementId: "G-ZP1D45ENLG"
+    appId: "1:996484563271:web:0b9d1f6436ed6a762a0c62",
+    measurementId: "G-KGDY6QJYXS"
   };
 
   // Initialize Firebase
@@ -51,8 +51,11 @@ createUserWithEmailAndPassword(auth, uname, password)
     })
 
     alert('user created!');
-    // ...
+
+    // window.location.href = "/HTML/login.html";
+    
   })
+
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
@@ -60,7 +63,7 @@ createUserWithEmailAndPassword(auth, uname, password)
     alert(errorMessage);
   // ..
   });
-
+ 
 };
 
 // ================ Password Visible or Not Validation =============================//
