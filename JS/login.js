@@ -86,14 +86,12 @@ function signingoogle() {
   });
   }
 
-
-
-
+// =========================== Continue With Facebook ===============//
 
 const password_show2 = document.getElementById("password-show");
 password_show2.addEventListener("click", myFunctionps2);
 function myFunctionps2() {
-  var y = document.getElementById("psw");
+  var y = document.getElementById("psw-r");
   if (y.type === "password") {
     y.type = "text";
   } else {
