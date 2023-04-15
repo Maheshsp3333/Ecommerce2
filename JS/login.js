@@ -34,9 +34,9 @@ const auth = getAuth(app);
 const provider = new GoogleAuthProvider(app);
 
 const login = document.getElementById("login");
-login.addEventListener("click", loginFunction);
+login.addEventListener("click", loginFunction1);
 
-function loginFunction() {
+function loginFunction1() {
   var uname = document.getElementById("uname").value;
   var password = document.getElementById("psw").value;
 
@@ -86,16 +86,7 @@ function signingoogle() {
   });
   }
 
-  const signout = document.getElementById("logout-btn");
-  signout.addEventListener("click", signout);
 
-function signout() {
-  signOut(auth).then(() => {
-    window.location.href = "/HTML/login.html";
-  }).catch((error) => {
-    // An error happened.
-  });
-}
 
 
 
