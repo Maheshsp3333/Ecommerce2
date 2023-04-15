@@ -8,7 +8,7 @@ import {
 import {
   getAuth,
   signInWithEmailAndPassword,
-  GoogleAuthProvider,signInWithRedirect,getRedirectResult
+  GoogleAuthProvider,signInWithRedirect,getRedirectResult,signInWithPopup
 } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
