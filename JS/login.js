@@ -34,7 +34,10 @@ const auth = getAuth(app);
 const provider = new GoogleAuthProvider(app);
 
 const login = document.getElementById("login");
-login.addEventListener("click", loginFunction1);
+if(login){
+  login.addEventListener("click", loginFunction1);
+}
+
 
 function loginFunction1() {
   var uname = document.getElementById("uname").value;
@@ -61,7 +64,10 @@ function loginFunction1() {
 // ==================== Sign In With Google =======================//
 
 const signinwithgoogle = document.getElementById("signin-with-google");
-signinwithgoogle.addEventListener("click", signingoogle);
+if(signinwithgoogle){
+  signinwithgoogle.addEventListener("click", signingoogle);
+}
+
 
 function signingoogle() {
   signInWithPopup(auth, provider)
@@ -86,10 +92,26 @@ function signingoogle() {
   });
   }
 
+// ================= Logout Code Here ===========================//
+  const signout = document.getElementById("logout-btn");
+  if(signout){
+    signout.addEventListener("click", signout1);
+  }
+  
 
-
+function signout1() {
+  signOut(auth).then(() => {
+    window.location.href = "/HTML/login.html";
+  }).catch((error) => {
+    console.log(error);
+  });
+}
+//====================== Password show js here ===================
 const password_show2 = document.getElementById("password-show");
-password_show2.addEventListener("click", myFunctionps2);
+if(password_show2){
+  password_show2.addEventListener("click", myFunctionps2);
+}
+
 function myFunctionps2() {
   var y = document.getElementById("psw");
   if (y.type === "password") {

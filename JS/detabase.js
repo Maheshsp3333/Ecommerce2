@@ -48,12 +48,12 @@ createUserWithEmailAndPassword(auth, uname, password)
         lname:lname,
         password:password,
         re_password:re_password
+    }).then(() =>{
+
+      window.location.href = "/HTML/login.html";
+       alert('user created!');
+
     })
-
-    alert('user created!');
-
-    // window.location.href = "/HTML/login.html";
-    
   })
 
   .catch((error) => {
