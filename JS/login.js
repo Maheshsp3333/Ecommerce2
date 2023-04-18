@@ -8,7 +8,7 @@ import {
 import {
   getAuth,
   signInWithEmailAndPassword,
-  GoogleAuthProvider,signInWithRedirect,getRedirectResult,signInWithPopup,signOut 
+  GoogleAuthProvider,signInWithRedirect,getRedirectResult,signInWithPopup,signOut,FacebookAuthProvider 
 } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -67,8 +67,6 @@ const signinwithgoogle = document.getElementById("signin-with-google");
 if(signinwithgoogle){
   signinwithgoogle.addEventListener("click", signingoogle);
 }
-
-
 function signingoogle() {
   signInWithPopup(auth, provider)
   .then((result) => {
@@ -91,6 +89,40 @@ function signingoogle() {
     // ...
   });
   }
+// ======================== Sign in With Facebook ======================= //
+
+const signinwithfacebook = document.getElementById("signin-with-facebook");
+if(signinwithfacebook){
+  signinwithfacebook.addEventListener("click", signinfacebook);
+}
+function signinfacebook() {
+
+  signInWithPopup(auth, provider)
+  .then((result) => {
+    // The signed-in user info.
+    const user = result.user;
+
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    const credential = FacebookAuthProvider.credentialFromResult(result);
+    const accessToken = credential.accessToken;
+
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+
+    window.location.href = "/index.html";
+  })
+  .catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = FacebookAuthProvider.credentialFromError(error);
+
+    // ...
+  });
+}
 
 // ================= Logout Code Here ===========================//
   const signout = document.getElementById("logout-btn");
